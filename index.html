@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IA-Consumo-Máquinas (By Felipe)</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>IA - Análise de Consumo de Máquinas</h1>
+    <form id="dataForm">
+      <label for="nomeMaquina">Nome da máquina:</label>
+      <input type="text" id="nomeMaquina" required />
+
+      <label for="anos">Anos (ex: 2019,2020,2021):</label>
+      <input type="text" id="anos" required />
+
+      <label for="quantidades">Quantidades (ex: 5,10,3):</label>
+      <input type="text" id="quantidades" required />
+
+      <button type="submit">Analisar</button>
+    </form>
+
+    <div id="resultado" style="display:none;">
+      <h2>Resultado da Análise</h2>
+      <p id="media"></p>
+      <p id="crescimento"></p>
+      <p id="tendencia"></p>
+      <p id="previsao"></p>
+      <canvas id="grafico"></canvas>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
